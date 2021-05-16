@@ -6,9 +6,3 @@
 
 
 - [`501b34d`](https://github.com/elkevinwolf/devtools/commit/501b34d55bc4e7cdbab70edf1ccc0f09ccbf5884) Thanks [@elkevinwolf](https://github.com/elkevinwolf)! - Initial release
-
-
-### Patch Changes
-
-- Updated dependencies [[`501b34d`](https://github.com/elkevinwolf/devtools/commit/501b34d55bc4e7cdbab70edf1ccc0f09ccbf5884)]:
-  - @elkevinwolf/eslint-config-base@1.0.0
