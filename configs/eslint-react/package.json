@@ -1,6 +1,6 @@
 {
   "name": "@elkevinwolf/eslint-config-react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Kevin Wolf's opinionated shareable ESLint config for React projects",
   "license": "MIT",
   "author": {
@@ -36,7 +36,7 @@
     "pre-commit": "lint-staged"
   },
   "dependencies": {
-    "@elkevinwolf/eslint-config-base": "0.0.0",
+    "@elkevinwolf/eslint-config-base": "1.0.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0"
@@ -47,7 +47,7 @@
     "typescript": ">=4.2.4"
   },
   "devDependencies": {
-    "@elkevinwolf/prettier-config": "0.0.0",
+    "@elkevinwolf/prettier-config": "1.0.0",
     "eslint": "7.25.0",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1",
