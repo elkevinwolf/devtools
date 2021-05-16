@@ -1,0 +1,48 @@
+{
+  "name": "@elkevinwolf/prettier-config",
+  "version": "0.0.0",
+  "description": "Kevin Wolf's opinionated shareable Prettier config",
+  "license": "MIT",
+  "author": {
+    "name": "Kevin Wolf",
+    "email": "hi@kevinwolf.dev",
+    "url": "https://kevinwolf.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elkevinwolf/devtools",
+    "directory": "configs/prettier"
+  },
+  "bugs": {
+    "url": "https://github.com/elkevinwolf/devtools/issues",
+    "email": "hi@kevinwolf.dev"
+  },
+  "keywords": [
+    "prettier",
+    "prettier config",
+    "shareable prettier config",
+    "elkevinwolf"
+  ],
+  "main": ".prettierrc.json",
+  "files": [
+    ".prettierrc.json"
+  ],
+  "scripts": {
+    "build": "echo No build script for @elkevinwolf/prettier-config",
+    "lint": "prettier --ignore-path .eslintignore --check .",
+    "test": "echo No test script for @elkevinwolf/prettier-config",
+    "validate": "npm run build && npm run lint && npm run test",
+    "pre-commit": "lint-staged"
+  },
+  "peerDependencies": {
+    "prettier": ">=2.2.1"
+  },
+  "devDependencies": {
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1"
+  },
+  "prettier": "@elkevinwolf/prettier-config",
+  "lint-staged": {
+    "*.{json,md}": "prettier --write"
+  }
+}

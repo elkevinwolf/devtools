@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  workspace:
+    image: elkevinwolf/node:1.0.0
+    volumes:
+      - ..:/srv/workspace:cached
+      - ~/.config/gh:/root/.config/gh:cached
+    command: sleep infinity

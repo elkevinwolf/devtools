@@ -1,0 +1,27 @@
+{
+  "name": "@elkevinwolf/devtools",
+  "workspaces": [
+    "configs/*"
+  ],
+  "scripts": {
+    "prepare": "husky install && preconstruct dev",
+    "validate": "lerna run validate --stream && manypkg check",
+    "pre-commit": "lerna run --since HEAD --concurrency 1 --stream pre-commit",
+    "release": "preconstruct build && changeset publish"
+  },
+  "prettier": "@elkevinwolf/prettier-config",
+  "dependencies": {
+    "@babel/preset-env": "7.14.0",
+    "@babel/preset-typescript": "7.13.0",
+    "@changesets/changelog-github": "0.4.0",
+    "@changesets/cli": "2.16.0",
+    "@manypkg/cli": "0.17.0",
+    "@preconstruct/cli": "2.0.7",
+    "husky": "6.0.0",
+    "lerna": "4.0.0",
+    "prettier": "2.2.1"
+  },
+  "preconstruct": {
+    "packages": []
+  }
+}

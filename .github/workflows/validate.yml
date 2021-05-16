@@ -1,0 +1,22 @@
+name: Validate
+
+on: push
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    container: elkevinwolf/node:1.0.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install node_modules
+        run: npm ci --ignore-scripts
+      - name: Validate
+        run: npm run validate

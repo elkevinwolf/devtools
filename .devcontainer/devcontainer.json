@@ -1,0 +1,19 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "gruntfuggly.todo-tree",
+    "britesnow.vscode-toggle-quotes",
+    "zengxingxin.sort-js-object-keys"
+  ],
+  "postCreateCommand": "npm install",
+  "service": "workspace",
+  "settings": {
+    "remote.autoForwardPorts": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  },
+  "workspaceFolder": "/srv/workspace"
+}

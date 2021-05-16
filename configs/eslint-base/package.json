@@ -1,0 +1,61 @@
+{
+  "name": "@elkevinwolf/eslint-config-base",
+  "version": "0.0.0",
+  "description": "Kevin Wolf's opinionated shareable ESLint config",
+  "license": "MIT",
+  "author": {
+    "name": "Kevin Wolf",
+    "email": "hi@kevinwolf.dev",
+    "url": "https://kevinwolf.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elkevinwolf/devtools",
+    "directory": "configs/eslint-base"
+  },
+  "bugs": {
+    "url": "https://github.com/elkevinwolf/devtools/issues",
+    "email": "hi@kevinwolf.dev"
+  },
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "eslint base config",
+    "shareable eslint config",
+    "elkevinwolf"
+  ],
+  "main": ".eslintrc.json",
+  "files": [
+    ".eslintrc.json"
+  ],
+  "scripts": {
+    "build": "echo No build script for @elkevinwolf/eslint-config-base",
+    "lint": "prettier --ignore-path .eslintignore --check .",
+    "test": "echo No test script for @elkevinwolf/eslint-config-base",
+    "validate": "npm run build && npm run lint && npm run test",
+    "pre-commit": "lint-staged"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/parser": "4.22.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "2.22.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.25.0",
+    "prettier": ">=2.2.1",
+    "typescript": ">=4.2.4"
+  },
+  "devDependencies": {
+    "@elkevinwolf/prettier-config": "0.0.0",
+    "eslint": "7.25.0",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "4.2.4"
+  },
+  "prettier": "@elkevinwolf/prettier-config",
+  "lint-staged": {
+    "*.{json,md}": "prettier --write"
+  }
+}
