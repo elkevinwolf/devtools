@@ -1,1 +1,12 @@
-node_modules
+# dependencies
+/node_modules
+/.pnp
+/.pnp.js
+
+# debug
+*.log
+
+# misc
+*.pem
+.DS_Store
+.env

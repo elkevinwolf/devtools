@@ -32,8 +32,7 @@
     "build": "echo No build script for @elkevinwolf/eslint-config-base",
     "lint": "prettier --ignore-path .eslintignore --check .",
     "test": "echo No test script for @elkevinwolf/eslint-config-base",
-    "validate": "npm run build && npm run lint && npm run test",
-    "pre-commit": "lint-staged"
+    "validate": "npm run build && npm run lint && npm run test"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.22.0",
@@ -50,12 +49,8 @@
   "devDependencies": {
     "@elkevinwolf/prettier-config": "1.0.0",
     "eslint": "7.25.0",
-    "lint-staged": "10.5.4",
     "prettier": "2.2.1",
     "typescript": "4.2.4"
   },
-  "prettier": "@elkevinwolf/prettier-config",
-  "lint-staged": {
-    "*.{json,md}": "prettier --write"
-  }
+  "prettier": "@elkevinwolf/prettier-config"
 }

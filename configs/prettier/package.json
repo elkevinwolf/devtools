@@ -31,18 +31,13 @@
     "build": "echo No build script for @elkevinwolf/prettier-config",
     "lint": "prettier --ignore-path .eslintignore --check .",
     "test": "echo No test script for @elkevinwolf/prettier-config",
-    "validate": "npm run build && npm run lint && npm run test",
-    "pre-commit": "lint-staged"
+    "validate": "npm run build && npm run lint && npm run test"
   },
   "peerDependencies": {
     "prettier": ">=2.2.1"
   },
   "devDependencies": {
-    "lint-staged": "10.5.4",
     "prettier": "2.2.1"
   },
-  "prettier": "@elkevinwolf/prettier-config",
-  "lint-staged": {
-    "*.{json,md}": "prettier --write"
-  }
+  "prettier": "@elkevinwolf/prettier-config"
 }

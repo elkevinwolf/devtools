@@ -1,10 +1,5 @@
 {
   "version": "independent",
   "npmClient": "npm",
-  "useWorkspaces": true,
-  "command": {
-    "add": {
-      "exact": true
-    }
-  }
+  "useWorkspaces": true
 }

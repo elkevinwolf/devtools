@@ -6,4 +6,5 @@ services:
     volumes:
       - ..:/srv/workspace:cached
       - ~/.config/gh:/root/.config/gh:cached
+      - ~/.npm:/root/.npm
     command: sleep infinity

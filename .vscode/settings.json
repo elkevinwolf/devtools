@@ -1,0 +1,9 @@
+{
+  "prettier.ignorePath": ".eslintignore",
+  "eslint.workingDirectories": [
+    {
+      "pattern": "configs/*",
+      "changeProcessCWD": true
+    }
+  ]
+}
